@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    agent {
+        agent_1 {
 
     stages {
         stage ('Compile Stage') {
@@ -19,6 +20,8 @@ pipeline {
                 }
             }
         }
+    }
+  }
 
 
         stage ('Deployment Stage') {
